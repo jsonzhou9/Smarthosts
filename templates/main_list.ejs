@@ -1,0 +1,39 @@
+<div class="main_title">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <thead>
+  <tr>
+	<td>IP</td>
+	<td>域名</td>
+	<td width="70">是否生效</td>
+  </tr>
+  </thead>
+</table>
+</div>
+<div class="viewport">
+	<div class="main_list_wrap overview">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	  <tbody>
+	  <% for(var i=0; i<hostsList.length; i++) {%>
+	  <tr <% if(i%2==0){%>class="odd"<%}else{%>class="even"<%}%><% if(i==hostsList.length-1){%> style="border-bottom:1px solid #dbdcde;"<%}%>>
+		<td><%=hostsList[i].ip%></td>
+		<td><%=hostsList[i].host%></td>
+		<td width="70">
+		<%if(typeof(hostsList[i].enable)!="undefined"){%>
+		<span class="checkbox sunlit<% if(hostsList[i].enable){%> checked<%}%>">
+			<label><input type="checkbox" checked="" class="sunlit">
+			<span class="on">on</span>
+			<span class="toggle"></span>
+			<span class="off">off</span>
+			</label>
+		</span>
+		<%}else{%>
+		-
+		<%}%>
+		</td>
+	  </tr>
+	  <% } %>
+	  </tbody>
+	</table>
+	</div><!--main_list_wrap-->
+	<div class="scrollbar disable"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+</div><!--viewport-->

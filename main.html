@@ -1,0 +1,56 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>SmartHosts - a cool tool for change hosts</title>
+<link href="style/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="window">
+	<div class="titlebar">
+        <div class="dragbar">
+            <h1>Smart<span>Hosts</span></h1>
+            <p class="subtitle">a cool tool for change hosts</p>
+        </div>
+        <div class="toolbar">
+            <a href="#" class="minimize"><span class="icon-minus"></span></a>
+            <a href="#" class="close"><span class="icon-cancel"></span></a>
+        </div>
+    </div>
+	<div class="sidebar">
+    	<div class="menubar">
+        	<a href="#" id="menu_add"><span class="icon-note"></span></a>
+            <a href="#" id="menu_set"><span class="icon-cog"></span></a>
+            <a href="#" id="menu_help"><span class="icon-info"></span></a>
+        </div>
+        <div class="list" id="menu_list">
+
+        </div>
+    </div>
+    <div class="main">
+    	<div class="main_wrap">
+        	<div class="main_bar clearfix">
+            	<h3></h3>
+                <div class="main_btn" style="display:none;">
+                	<button href="#" class="btn btn_r" id="btn_del"><span class="icon-cancel"></span>删除</button>
+                    <button href="#" class="btn btn_g" id="btn_save"><span class="icon-floppy"></span>保存</button>
+                    <button href="#" class="btn btn_i" id="btn_edit"><span class="icon-eye"></span>文本方式编辑</button>
+                </div>
+            </div>
+            <div class="main_list">
+            	
+            </div><!--main_list-->
+        </div>
+    </div>
+</div>
+<div class="notifi"><div class="msg"></div></div>
+<div class="loader"></div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tinyscrollbar.min.js"></script>
+<script type="text/javascript" src="js/jqModal.js"></script>
+<script type="text/javascript" src="js/ejs.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/ui.js"></script>
+</body>
+</html>

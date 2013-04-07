@@ -1,0 +1,21 @@
+{
+  "main": "main.html",
+  "name": "SmartHosts",
+  "description": "a cool tool for change hosts",
+  "version": "1.0.0",
+  "keywords": ["hosts"],
+  "maintainers":{
+    "name": "Json Zhou",
+    "email": "zzyss86@qq.com",
+    "web": "http://www.2fz1.com/",
+    "project": "https://github.com/zzyss86/SmartHosts"
+  },
+  "window": {
+    "icon": "images/logo.png",
+    "toolbar": false,
+    "width": 700,
+    "height": 458,
+    "resizable": false,
+    "position": "center"
+  }
+}

@@ -1,0 +1,10 @@
+<div class="viewport">
+	<div class="overview">
+	<ul>
+		<% for(var i=0; i<menuList.length; i++) {%>
+		<li><a href="#"<%if(i==menuPos){%> class="curr"<%}%>><span class="icon-right"></span><i></i><%=menuList[i].group%></a></li>
+		<% } %>
+	</ul>
+	</div><!--overview-->
+	<div class="scrollbar disable"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+</div><!--viewport-->
